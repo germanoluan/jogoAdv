@@ -1,0 +1,18 @@
+clientes = {
+    "João": 500,
+    "Maria": 350,
+    "Carlos": 700
+}
+
+for nome, divida in clientes.items():
+    print(f"\nCliente: {nome}")
+    print(f"Dívida: R${divida}")
+
+    total_pago = 0
+
+    while total_pago < divida:
+        pagamento = float(input("Digite o valor do pagamento: R$ "))
+        total_pago += pagamento
+        print(f"Total pago: R${total_pago}")
+
+    print("Dívida quitada!")
